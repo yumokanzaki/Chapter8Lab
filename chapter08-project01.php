@@ -31,8 +31,9 @@ Chapter 8 Lab-->
 			<?php include "book-data.php"; ?>
             <form role="form">              
             <?php
-			if($_GET["email"] == "" || $_GET["email"] == NULL)
+			if($email == "" || $email== NULL)
 			{
+				
               echo
 			   "<div class='form-group has-error'>
                 <label for='exampleInputEmail1'>Email address</label>
@@ -40,7 +41,7 @@ Chapter 8 Lab-->
                 <p class='help-block'>Enter an email</p>
 				</div>";
             }
-            elseif ($_GET["email"] != "" || $_GET["email"] == NULL)
+            else if ($email != "" || $email == NULL)
 			{
               echo
 			  "<div class='form-group has-error'>
@@ -50,7 +51,7 @@ Chapter 8 Lab-->
             }
             ?>             
             <?php
-            if($_GET["password"] == "" || $_GET["password"] == NULL) 
+            if($password == "" || $password == NULL) 
 			{
               echo	
 			   "<div class='form-group has-error'>
@@ -59,7 +60,7 @@ Chapter 8 Lab-->
                 <p class='help-block'>Email and password not found</p>
 				</div>";
             }
-            elseif
+            else
 			{
               echo
 			  "<div class='form-group'>
